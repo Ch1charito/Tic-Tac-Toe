@@ -17,16 +17,21 @@ function init() {
 function render() {
     const contentDiv = document.getElementById('content');
 
-    let html = '<table>';
+    let tableHtml = '<table>';
     for (let i = 0; i < 3; i++) {
-        html += '<tr>';
+        tableHtml += '<tr>';
         for (let j = 0; j < 3; j++) {
             const index = i * 3 + j;
-            const symbol = fields[index] ? fields[index] : '';
-            html += `<td onclick="handleClick(${index})">${symbol}</td>`;
+            let symbol = '';
+            if (fields[index] === 'circle') {
+                symbol = 'o';
+            } else if(fields[index] === 'cross'){
+                symbol = 'x';
+            }
+            tableHtml += `<td>${symbol}</td>`;
         }
-        html += '</tr>';
+        tableHtml += '</tr>';
     }
-    html += '</table>';
-    contentDiv.innerHTML = html;
+    tableHtml += '</table>';
+    contentDiv.innerHTML = tableHtml;
 }
