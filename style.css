@@ -5,7 +5,15 @@ body {
     margin: 0;
     padding: 0;
 }
-
+h1{
+    text-align: center;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
 table {
     border-collapse: collapse;
     margin: 20px auto;
@@ -13,8 +21,8 @@ table {
 }
 
 td {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     vertical-align: middle;
     border: 5px solid white;
