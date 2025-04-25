@@ -1,13 +1,25 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
 table {
     border-collapse: collapse;
     margin: 20px auto;
+    border-style: hidden;/* äußere Rahmen entfernen */
 }
+
 td {
     width: 60px;
     height: 60px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #000;
+    border: 5px solid white;
     font-size: 36px;
     cursor: pointer;
 }
+
+
